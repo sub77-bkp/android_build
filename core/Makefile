@@ -1561,10 +1561,11 @@ ifneq ($(recovery_fstab),)
 # OTA update package
 
 name := $(TARGET_PRODUCT)
+version := $(PAR_VERSION)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)-ota-$(FILE_NAME_TAG)
+name := AOSParadox-$(version)-$(shell date +%Y%m%d)-$(TARGET_DEVICE)-$(USER).zip
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
