@@ -1566,7 +1566,7 @@ version := $(PAR_VERSION)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := AOSParadox-$(version)-$(shell date +%Y%m%d)-$(TARGET_DEVICE)-$(USER).zip
+name := AOSParadox-ALPHA-$(shell date +%Y%m%d)-$(TARGET_DEVICE)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
