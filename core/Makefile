@@ -203,7 +203,7 @@ endif
 			TARGET_BUILD_FLAVOR="$(TARGET_PRODUCT)-$(TARGET_BUILD_VARIANT)" \
 			TARGET_DEVICE="$(TARGET_DEVICE)" \
 			PRODUCT_NAME="$(TARGET_PRODUCT)" \
-			PAR_VERSION="Alpha-0.1" \
+			PAR_VERSION="Stable-1.0" \
 			PRODUCT_BRAND="$(PRODUCT_BRAND)" \
 			PRODUCT_DEFAULT_LANGUAGE="$(call default-locale-language,$(PRODUCT_LOCALES))" \
 			PRODUCT_DEFAULT_REGION="$(call default-locale-region,$(PRODUCT_LOCALES))" \
@@ -1568,7 +1568,7 @@ version := $(PAR_VERSION)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := AOSParadox-ALPHA-$(shell date +%Y%m%d)-$(TARGET_DEVICE)
+name := AOSParadox-STABLE-$(shell date +%Y%m%d)-$(TARGET_DEVICE)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
